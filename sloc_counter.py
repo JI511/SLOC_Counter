@@ -42,6 +42,7 @@ def count_lines_of_code(path, output_file):
                 file = open(output_file, "w")
                 for line in file_lines:
                     file.write(line)
+                print("Successfully updated SLOC in output file.")
             except Exception:
                 raise
         else:
